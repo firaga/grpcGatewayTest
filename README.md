@@ -9,3 +9,5 @@ protoc -I . --grpc-gateway_out ./gen/go \
 your/service/v1/your_service.proto
 
 https://github.com/grpc-ecosystem/grpc-gateway#usage
+
+curl -X POST http://localhost:8081/v1/example/echo -H "Content-Type: application/json" -d'{"value": "foo"}'
